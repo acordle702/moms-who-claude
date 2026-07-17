@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Podcast — Moms Who Claude</title>
+<meta name="description" content="The Moms Who Claude podcast — every episode, the real prompts and the mess they solved.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Montserrat:wght@400;500;600;700;800&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner wrap">
+    <a href="index.html" class="logo">Moms Who <em>Claude</em></a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="resources.html">Prompts</a></li>
+      <li><a href="courses.html">The Deep Dive</a></li>
+      <li><a href="podcast.html" class="active">Podcast</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom:20px;">
+    <div class="wrap" style="max-width:640px;">
+      <span class="eyebrow">The podcast · Season 1 · 22 episodes</span>
+      <h1 style="font-size:clamp(2rem,4vw,3rem);">Where Moms Who Claude started.</h1>
+      <p class="lede">The show is one piece of a bigger project — if you want the prompts without the podcast, the <a href="resources.html" style="color:var(--marigold-dark); font-weight:700;">free library</a> is a faster way in. But if you like a story with your prompts, start here.</p>
+      <a href="#" class="btn btn-primary" style="margin-top:8px;">Open on Spotify</a>
+    </div>
+  </section>
+
+  <section style="padding-top:20px;">
+    <div class="wrap" style="max-width:760px;">
+
+      <div class="ep-row">
+        <span class="ep-num">01</span>
+        <div>
+          <p class="ep-title">Why I Started Talking to a Chatbot at Midnight</p>
+          <p class="ep-desc">The origin story — six kids, zero backup, and the first real conversation with Claude.</p>
+        </div>
+        <span class="ep-tag">Listen now</span>
+      </div>
+
+      <div class="ep-row">
+        <span class="ep-num">02</span>
+        <div>
+          <p class="ep-title">The Sunday Scramble Prompt</p>
+          <p class="ep-desc">Turning a week of camps, practices, and drivers into one clean plan before coffee's done brewing.</p>
+        </div>
+        <span class="ep-tag soon">Coming soon</span>
+      </div>
+
+      <div class="ep-row">
+        <span class="ep-num">03</span>
+        <div>
+          <p class="ep-title">Dinner for Six, Zero Meltdowns</p>
+          <p class="ep-desc">Meal planning around picky eaters without blowing the Trader Joe's budget.</p>
+        </div>
+        <span class="ep-tag soon">Coming soon</span>
+      </div>
+
+      <div class="ep-row">
+        <span class="ep-num">04</span>
+        <div>
+          <p class="ep-title">Your Calendar Has Trust Issues</p>
+          <p class="ep-desc">Getting Claude to actually help manage a shared family calendar without double-booking swim and cheer.</p>
+        </div>
+        <span class="ep-tag soon">Coming soon</span>
+      </div>
+
+      <div class="ep-row">
+        <span class="ep-num">05</span>
+        <div>
+          <p class="ep-title">Paying the Babysitter Without a Spreadsheet</p>
+          <p class="ep-desc">A simple weekly system for tracking hours and sending Venmo without the Sunday-night math.</p>
+        </div>
+        <span class="ep-tag soon">Coming soon</span>
+      </div>
+
+      <p style="margin-top:32px; color:var(--ink-soft);">Episodes 6–22 are recorded and rolling out weekly — check back or join the list on the <a href="about.html#contact" style="color:var(--marigold-dark); font-weight:700;">About page</a> to get notified.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <span class="foot-note">© 2026 Moms Who Claude</span>
+    <ul class="foot-links">
+      <li><a href="resources.html">Prompts</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const links = document.querySelector('.nav-links');
+  toggle.addEventListener('click', () => {
+    const open = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+</body>
+</html>

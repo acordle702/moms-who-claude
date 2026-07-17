@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Moms Who Claude</title>
+<meta name="description" content="Allison is a mom of six who found AI out of desperation, not curiosity. This is why she started Moms Who Claude.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Montserrat:wght@400;500;600;700;800&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner wrap">
+    <a href="index.html" class="logo">Moms Who <em>Claude</em></a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="resources.html">Prompts</a></li>
+      <li><a href="courses.html">The Deep Dive</a></li>
+      <li><a href="podcast.html">Podcast</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap bio-grid">
+      <div>
+        <span class="eyebrow">The mom behind the mic</span>
+        <h1 style="font-size:clamp(2.2rem,4vw,3.2rem);">Hi, I'm Allison.</h1>
+        <p class="lede">I have six kids. I didn't come to AI because I'm a tech person — I came to it because nothing else was working.</p>
+      </div>
+
+      <div>
+        <p>Between camp forms, PT, swim, hair appointments, cheer, a babysitter schedule, and a calendar that somehow never matched anyone else's, I hit the point most moms hit: too much in my head, and no room left for anything else.</p>
+        <p>Bo, my husband, told me to just try asking Claude. Not to code anything — just to talk to it like a very patient assistant who never gets tired of my run-on sentences at 11pm. It changed how I run my house, and I couldn't stop telling people about it.</p>
+        <p><strong>Moms Who Claude</strong> is that same conversation, opened up — a prompt library, courses, and yes, a podcast. No tech background required, no jargon, no pretending any of this is glamorous. Just real prompts for real chaos, tested on my own six kids, my husband Bo, and our regular sitters, before they ever go live.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-alt" id="contact">
+    <div class="wrap" style="max-width:560px; text-align:center;">
+      <span class="eyebrow">Stay in the loop</span>
+      <h2>Get the free prompts, first</h2>
+      <p>One email to start: the prompt library, plus updates on new episodes and courses.</p>
+      <form style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center; margin-top:20px;" onsubmit="event.preventDefault(); alert('Thanks for signing up! (Connect this form to your email tool to go live.)');">
+        <input type="email" required placeholder="you@email.com" style="flex:1; min-width:220px; padding:14px 18px; border-radius:999px; border:1px solid var(--line); font-family:var(--font-body); font-size:0.95rem;">
+        <button type="submit" class="btn btn-primary">Sign me up</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <span class="foot-note">© 2026 Moms Who Claude</span>
+    <ul class="foot-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="resources.html">Prompts</a></li>
+      <li><a href="podcast.html">Podcast</a></li>
+      <li><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const links = document.querySelector('.nav-links');
+  toggle.addEventListener('click', () => {
+    const open = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+</body>
+</html>
