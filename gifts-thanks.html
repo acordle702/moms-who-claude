@@ -69,7 +69,7 @@
 <script>
   (function () {
     var url = 'https://www.momswhoclaude.ai/gifts.html';
-    var msg = "I just got this free Christmas wish list thing from Moms Who Claude. One prompt, about 10 minutes, and the family stops asking you \u201cwhat do the kids want?\u201d Free:";
+    var msg = "I just got this free Christmas wish list thing from Moms Who Claude. One prompt, about 10 minutes, and the family stops asking you \u201cwhat do the kids want?\u201d Try it!";
     var b = document.getElementById('share'), note = document.getElementById('shared');
     b.addEventListener('click', function () {
       if (navigator.share) { navigator.share({ text: msg, url: url }).catch(function () {}); return; }
