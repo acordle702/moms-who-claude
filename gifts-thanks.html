@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your gift | Moms Who Claude</title>
+<meta name="description" content="Copy the prompt and paste it into Claude.">
+<meta property="og:title" content="Your Christmas gift">
+<meta property="og:description" content="Copy the prompt and paste it into Claude.">
+<meta property="og:image" content="https://www.momswhoclaude.ai/gifts-og.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,500;1,6..72,500&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{ --plum:#1F1418; --berry:#3A1F2E; --rose:#C45E7E; --rose-light:#D4849A; --blush:#F3E8E4; --cream:#F5ECE8; --ink:#2A1820; }
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; }
+  body{ min-height:100vh; min-height:100dvh; background: radial-gradient(80% 60% at 50% 30%, #5A2B42 0%, var(--berry) 70%); color:var(--cream); font-family:'Montserrat',system-ui,sans-serif; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:28px 20px 36px; text-align:center; position:relative; overflow-x:hidden; }
+  .garland{ position:absolute; top:0; left:0; width:100%; height:56px; pointer-events:none; }
+  .wrap{ width:100%; max-width:520px; position:relative; z-index:1; }
+  .eyebrow{ font-weight:700; font-size:.78rem; letter-spacing:.24em; text-transform:uppercase; color:var(--rose-light); margin:0 0 14px; }
+  h1{ font-family:'Newsreader',Georgia,serif; font-weight:500; font-size:clamp(2.5rem,11vw,3.4rem); line-height:1.04; margin:0 0 .4em; color:var(--cream); }
+  h1 em{ color:var(--rose); font-style:italic; }
+  p{ font-size:1.15rem; line-height:1.55; margin:0 0 1em; }
+  form{ display:grid; gap:12px; margin-top:22px; }
+  input[type=email]{ width:100%; padding:18px 22px; border-radius:999px; border:1px solid var(--rose-light); background:var(--cream); color:var(--ink); font:500 1.15rem 'Montserrat',sans-serif; }
+  input[type=email]::placeholder{ color:#7a6068; }
+  button.big{ width:100%; padding:18px 24px; border-radius:999px; border:0; background:var(--rose); color:#fff; font:700 1.15rem 'Montserrat',sans-serif; cursor:pointer; }
+  button.big:disabled{ opacity:.7; }
+  .small{ font-size:1.05rem; opacity:.92; margin:14px 0 0; line-height:1.5; }
+  .box{ text-align:left; background:var(--cream); color:var(--ink); border-radius:16px; padding:18px 18px; font-size:1rem; line-height:1.5; max-height:34vh; overflow:auto; border-left:5px solid var(--rose); margin:18px 0 14px; }
+  .steps{ text-align:left; list-style:none; padding:0; margin:20px 0 0; display:grid; gap:10px; font-size:1.1rem; }
+  .steps b{ color:var(--rose-light); }
+  a{ color:var(--rose-light); }
+  .cursor{ display:inline-block; width:.05em; height:.72em; background:var(--rose); margin-left:.1em; }
+  :focus-visible{ outline:3px solid var(--rose-light); outline-offset:2px; }
+</style>
+</head>
+<body>
+<svg class="garland" viewBox="0 0 1200 56" preserveAspectRatio="xMidYMin slice" aria-hidden="true"><path d="M-10 4 Q150 46 300 4 T600 4 T900 4 T1210 4" fill="none" stroke="#D4849A" stroke-opacity=".8" stroke-width="1.5"/><circle cx="150" cy="26" r="8" fill="#C45E7E"/><circle cx="450" cy="26" r="8" fill="#D4849A"/><circle cx="750" cy="26" r="8" fill="#F3E8E4"/><circle cx="1050" cy="26" r="8" fill="#C45E7E"/></svg>
+<div class="wrap">
+
+  <p class="eyebrow">Check your email too</p>
+  <h1>Here it is<span class="cursor" aria-hidden="true"></span></h1>
+  <p>Tap the button. Then paste it into a new Claude chat.</p>
+  <div class="box" id="prompt">I want to build a Christmas wish list page for my kids that I can share with my family as a link. First, interview me. Ask one question at a time, starting with my first name and my kids&#x27; first names and ages. Then, for each kid, ask about clothing and shoe sizes, what they&#x27;re into right now, anything to skip, and gift ideas (links welcome). If I say “not sure,” just move on. When you have enough, build the page and show it to me as a finished page I can open, not code. Each kid gets a tab with their name and age, sizes, what they&#x27;re into, and a “please skip” line, then their wish list. Every gift is labeled Open (up for grabs), Claimed (someone&#x27;s buying it, show who), or Covered (already bought, crossed out). Open gifts first. At the top: “Want to grab something? Text me so nobody doubles up.” (use my first name). Add a “Last updated” date and a small footer: “Made with Claude · a Christmas gift from Moms Who Claude.” No prices anywhere. First names only. Big, easy-to-read text, because grandparents will open it on their phones. Look: a deep berry-plum background with soft snow dots, one warm cream card, dark plum text, one rose accent color. Headlines in a serif font like Newsreader, everything else in Montserrat. A holly sprig and a string of ornaments. No gold, no glitter. When it&#x27;s built, tell me in plain steps, for both my phone and my computer, how to publish it as a link, how to bookmark that link, and how to text it to my family. I&#x27;m the only one who will change this page. Tell me whether the link stays the same when I update it.</div>
+  <button class="big" id="copy" type="button">Copy the prompt</button>
+  <ol class="steps">
+    <li><b>1.</b> Tap <b>Copy the prompt</b>.</li>
+    <li><b>2.</b> Open <a href="https://claude.ai" target="_blank" rel="noopener">claude.ai</a> (free) and start a new chat.</li>
+    <li><b>3.</b> Paste, send, and answer its questions. "Not sure" is a fine answer.</li>
+  </ol>
+  <p class="small">Spread holiday cheer: send this to your sister or a mom friend. Then reply <b>MAGIC</b> to my email and I will send you an extra little stocking stuffer for sharing. Thanks for helping me grow!</p>
+  <button class="big" id="share" type="button" style="background:transparent;border:2px solid var(--rose-light);color:var(--cream);margin-top:8px">Text this to a friend</button>
+  <p class="small" id="shared" aria-live="polite"></p>
+<script>
+  var btn = document.getElementById('copy'), box = document.getElementById('prompt');
+  btn.addEventListener('click', function () {
+    var t = box.innerText;
+    function done() { btn.textContent = 'Copied! Now open Claude'; }
+    function fallback() { var r = document.createRange(); r.selectNodeContents(box); var s = getSelection(); s.removeAllRanges(); s.addRange(r); try { document.execCommand('copy'); done(); } catch (e) { btn.textContent = 'Press and hold the text to copy'; } }
+    if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(t).then(done, fallback); } else { fallback(); }
+  });
+</script>
+
+<script>
+  (function () {
+    var url = 'https://www.momswhoclaude.ai/gifts.html';
+    var msg = "I just got this free Christmas wish list thing from Moms Who Claude. One prompt, about 10 minutes, and the family stops asking you \u201cwhat do the kids want?\u201d Free:";
+    var b = document.getElementById('share'), note = document.getElementById('shared');
+    b.addEventListener('click', function () {
+      if (navigator.share) { navigator.share({ text: msg, url: url }).catch(function () {}); return; }
+      var t = msg + ' ' + url;
+      if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(t).then(function () { note.textContent = 'Message copied. Paste it into a text.'; }, function () { note.textContent = url; }); }
+      else { note.textContent = t; }
+    });
+  })();
+</script>
+</div>
+</body>
+</html>
